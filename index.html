@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>number geussing</title>
+
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box on">
+        <h1>
+          <span class="h">g</span><span class="i">u</span
+          ><span class="j">e</span><span class="k">s</span
+          ><span class="l">s</span> <span class="h">t</span
+          ><span class="n">h</span><span class="o">e</span>
+          <span class="p">n</span><span class="q">u</span
+          ><span class="r">m</span><span class="s">b</span
+          ><span class="t">e</span><span class="h">r</span>
+        </h1>
+        <p class="blink">Between [1-20]</p>
+        <div class="middle-row">
+          <div class="image-and-left-side">
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2bkBpiXFG8mEoGiVsUy8BFXEgxS5Q1Kb5-gNXaaJNEXnV9W_v7ZhFcTnb-In_naPBAn4&usqp=CAU"
+                alt="guess image"
+              />
+            </div>
+            <div class="left-side">
+              <input type="number" name="guess-input" id="guess-input" />
+              <button class="check">Check</button>
+            </div>
+          </div>
+          <div class="right-side">
+            <p class="instruction">🤷‍♀️🤷‍♀️ Guess Number</p>
+            <p class="score">🔄 Score: <span id="current-score"></span></p>
+            <p class="highscore">
+              🥇 High Score: <span id="high-score"></span>
+            </p>
+          </div>
+        </div>
+        <div class="new-button">
+          <button class="new-game-button">New Game</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

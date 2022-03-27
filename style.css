@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500&family=Smooch+Sans:wght@600&family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Roboto:ital,wght@1,300;1,500&family=Smooch+Sans:wght@600&family=Ubuntu:wght@700&display=swap");
+
+html,
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 70%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Inspiration", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.blink {
+  text-align: right;
+  font-family: serif;
+  font-size: 2rem;
+  color: rgb(38, 175, 238);
+  letter-spacing: 1px;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+img {
+  width: 170px;
+  height: 170px;
+}
+
+.middle-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image-and-left-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#guess-input {
+  width: 6rem;
+  height: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: aqua;
+  border: 2px solid rgb(87, 150, 150);
+}
+
+.check {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.check:hover {
+  background-color: rgb(87, 150, 150);
+  border: none;
+  border-radius: 2px;
+}
+
+.new-button {
+  display: flex;
+  justify-content: center;
+}
+
+.new-button button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  background-color: blanchedalmond;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.new-button button:hover {
+  background-color: rgb(87, 150, 150);
+}
+
+.h {
+  color: rgb(179, 28, 28);
+}
+.i {
+  color: blueviolet;
+}
+.j {
+  color: rgb(252, 17, 17);
+}
+.k {
+  color: rgb(34, 66, 172);
+}
+.l {
+  color: rgb(66, 240, 32);
+}
+.n {
+  color: rgb(252, 17, 17);
+}
+.o {
+  color: blueviolet;
+}
+.m {
+  color: rgb(243, 8, 165);
+}
+.q {
+  color: blueviolet;
+}
+.p {
+  color: rgb(66, 240, 32);
+}
+.r {
+  color: rgb(34, 66, 172);
+}
+.s {
+  color: rgb(66, 240, 32);
+}
+.t {
+  color: antiquewhite;
+}
+
+.hidden {
+  display: none;
+}
+
+.win {
+  background-image: radial-gradient(red, green, blue);
+}
+
+.on {
+  background-color: rgb(58, 58, 92);
+}
+
+@media screen and (max-width: 713px) {
+  h1,
+  .blink,
+  .right-side {
+    margin-bottom: 1rem;
+  }
+  .image-and-left-side {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  html {
+    font-size: 13px;
+  }
+  .middle-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  .image-and-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  h1 {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .blink {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  img {
+    width: 140px;
+    height: 140px;
+  }
+  .right-side {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .new-button button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
